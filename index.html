@@ -44,11 +44,11 @@
             display: block;
         }
         .timeline-step .circle {
-            width: 30px;
-            height: 30px;
+            width: 30px; /* Adjusted size of the circle */
+            height: 30px; /* Adjusted size of the circle */
             border-radius: 50%;
             background-color: #fff;
-            margin: 10px auto;
+            margin: 0 auto;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -74,20 +74,12 @@
         }
         .timeline-line {
             position: absolute;
-            top: 75%; /* Reduces the position to make the line pass through the circles */
+            top: 50%; /* Moves the line to the center of the circles */
             left: 15px;
             right: 15px;
             height: 4px;
             background-color: #555;
             z-index: -1;
-        }
-        .timeline-line span {
-            position: absolute;
-            width: 20%; /* Limit line width to 80% */
-            top: 50%;
-            left: 0;
-            height: 4px;
-            background-color: #555;
         }
     </style>
 </head>
@@ -128,3 +120,4 @@
     </div>
 </body>
 </html>
+
