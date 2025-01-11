@@ -11,14 +11,21 @@
             margin: 0;
             padding: 0;
         }
+        .timeline-container {
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: left;
+        }
+        .timeline-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
         .timeline {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
             position: relative;
-            margin: 20px auto;
-            max-width: 800px;
         }
         .timeline-step {
             text-align: center;
@@ -40,6 +47,17 @@
         .timeline-step .label {
             margin-top: 10px;
         }
+        .timeline-step .description {
+            font-size: 12px;
+            color: #777;
+            margin-top: 5px;
+        }
+        .timeline-step .title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 5px;
+        }
         .timeline-line {
             position: absolute;
             top: 50%;
@@ -52,19 +70,34 @@
     </style>
 </head>
 <body>
-    <div class="timeline">
-        <div class="timeline-line"></div>
-        <div class="timeline-step">
-            <div class="circle">1</div>
-            <div class="label">Étape 1</div>
-        </div>
-        <div class="timeline-step">
-            <div class="circle">2</div>
-            <div class="label">Étape 2</div>
-        </div>
-        <div class="timeline-step">
-            <div class="circle">3</div>
-            <div class="label">Étape 3</div>
+    <div class="timeline-container">
+        <div class="timeline-title">Mon Parcours</div>
+        <div class="timeline">
+            <div class="timeline-line"></div>
+            <div class="timeline-step">
+                <div class="circle">1</div>
+                <div class="label">Level 1</div>
+                <div class="description">Description de Level 1</div>
+                <div class="title">Titre 1</div>
+            </div>
+            <div class="timeline-step">
+                <div class="circle">2</div>
+                <div class="label">Level 2</div>
+                <div class="description">Description de Level 2</div>
+                <div class="title">Titre 2</div>
+            </div>
+            <div class="timeline-step">
+                <div class="circle">3</div>
+                <div class="label">Level 3</div>
+                <div class="description">Description de Level 3</div>
+                <div class="title">Titre 3</div>
+            </div>
+            <div class="timeline-step">
+                <div class="circle">4</div>
+                <div class="label">Level 4</div>
+                <div class="description">Description de Level 4</div>
+                <div class="title">Titre 4</div>
+            </div>
         </div>
     </div>
 </body>
