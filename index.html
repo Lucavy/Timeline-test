@@ -74,12 +74,20 @@
         }
         .timeline-line {
             position: absolute;
-            top: 50%;
+            top: 75%; /* Reduces the position to make the line pass through the circles */
             left: 15px;
             right: 15px;
             height: 4px;
             background-color: #555;
             z-index: -1;
+        }
+        .timeline-line span {
+            position: absolute;
+            width: 20%; /* Limit line width to 80% */
+            top: 50%;
+            left: 0;
+            height: 4px;
+            background-color: #555;
         }
     </style>
 </head>
