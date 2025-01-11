@@ -4,9 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Timeline</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .timeline {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .timeline-step {
+            text-align: center;
+            position: relative;
+        }
+        .timeline-step .circle {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #4CAF50;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-weight: bold;
+        }
+        .timeline-step .label {
+            margin-top: 10px;
+        }
+        .timeline-line {
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            right: 15px;
+            height: 4px;
+            background-color: #ddd;
+            z-index: -1;
+        }
+    </style>
 </head>
 <body>
-    <h1>My Timeline</h1>
-    <p>This is a simple timeline example.</p>
+    <div class="timeline">
+        <div class="timeline-line"></div>
+        <div class="timeline-step">
+            <div class="circle">1</div>
+            <div class="label">VOICI l'étape 1</div>
+        </div>
+        <div class="timeline-step">
+            <div class="circle">2</div>
+            <div class="label">Maintenant l'étape 2</div>
+        </div>
+        <div class="timeline-step">
+            <div class="circle">3</div>
+            <div class="label">et Étape 3</div>
+        </div>
+    </div>
 </body>
 </html>
