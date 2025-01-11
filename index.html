@@ -26,17 +26,18 @@
         .timeline {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start; /* Aligns the steps on top of each other */
             position: relative;
         }
         .timeline-step {
             text-align: center;
             position: relative;
-            margin-top: 40px; /* Added margin to push down the text further */
+            margin-top: 60px; /* Increased margin to ensure text does not overlap */
+            width: 20%; /* Make sure all steps are evenly distributed */
         }
         .timeline-step .image {
-            width: 50px;
-            height: 50px;
+            width: 100px; /* Increased size of the image */
+            height: 100px; /* Increased size of the image */
             background-color: #ddd;
             margin: 0 auto;
             border-radius: 8px;
@@ -100,4 +101,22 @@
                 <div class="label">Experienced</div>
                 <div class="description">Description de Experienced</div>
                 <div class="title">Titre 2</div>
-            <
+            </div>
+            <div class="timeline-step">
+                <div class="image"></div> <!-- Image placeholder -->
+                <div class="circle">3</div>
+                <div class="label">Honored</div>
+                <div class="description">Description de Honored</div>
+                <div class="title">Titre 3</div>
+            </div>
+            <div class="timeline-step">
+                <div class="image"></div> <!-- Image placeholder -->
+                <div class="circle">4</div>
+                <div class="label">Elite</div>
+                <div class="description">Description de Elite</div>
+                <div class="title">Titre 4</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
